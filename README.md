@@ -1,136 +1,102 @@
-# Project Lyrics
+#Songster
+Develop an elegant React.js Music Application.
 
-Develop an elegant React.js Music Application. 
+Check out the complete project here: https://songster.aminahmadi.me/
 
-Check out the complete project requirements [here](https://docs.google.com/document/d/13PeFwRlPEhMw_HPyrIrInvQuKaVWnpNmcv-y3NA208s/edit?usp=sharing)
-
-# Contributing
-
-When contributing to this repository, please first discuss the change you wish to make via issue.
-Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
-
-
-## System Requirements
-
+##System Requirements
 To get started with development, you need to install few tools
 
-1. git 
-   
-   `git` version 2.13.1 or higher. Download [git](https://git-scm.com/downloads) if you don't have it already.
+###git
 
-   To check your version of git, run:
+git version 2.13.1 or higher. Download git if you don't have it already.
 
-   ```shell
-    git --version
-   ```
+To check your version of git, run:
 
-2. node 
-   
-   `node` version 16.15.1 or higher. Download [node](https://nodejs.org/en/download/) if you don't have it already.
+```bash
+ git --version
+```
 
-   To check your version of node, run:
+###node
 
-   ```shell
-    node --version
-   ```
+node version 16.15.1 or higher. Download node if you don't have it already.
 
-3. npm
-  
-   `npm` version 5.6.1 or higher. You will have it after you install node.
+To check your version of node, run:
 
-   To check your version of npm, run:
+```bash
+ node --version
+```
 
-   ```shell
-    npm --version
-   ```
+###npm
 
-## Setup
+npm version 5.6.1 or higher. You will have it after you install node.
 
+To check your version of npm, run:
+
+```bash
+ npm --version
+```
+
+##Setup
 To set up a development environment, please follow these steps:
 
-1. Clone the repo
+###Clone the repo
 
-   ```shell
-    git clone https://github.com/JavaScript-Mastery-PRO/project1_team4_repository.git
-   ```
+```bash
+ git clone https://github.com/JavaScript-Mastery-PRO/project1_team4_repository.git
+```
 
-2. Change directory to the project directory
+###Change directory to the project directory
 
-    ```shell
-    cd project1_team4_repository
-    ```
+```bash
+cd project1_team4_repository
+```
 
-3. Install the dependencies
-   
-    ```shell
-     npm install
-    ```
+###Install the dependencies
 
-    If you get an error, please check the console for more information.
+```bash
+ npm install
+```
 
-    If you don't get an error, you are ready to start development.
+If you get an error, please check the console for more information.
 
-4. Run the app
-   
-    ```shell
-    npm run dev
-    ```
+If you don't get an error, you are ready to start development.
 
-    Project will be running in the browser.
+##Run the app
 
-    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm run dev
+```
 
-## Issues
+Project will be running in the browser.
 
-You've found a bug in the source code, a mistake in the documentation or maybe you'd like a new feature? You can help us by [submitting an issue on GitHub](https://github.com/orgs/JavaScript-Mastery-PRO/projects/8). Before you create an issue, make sure to search the issue archive -- your issue may have already been addressed!
+Open http://localhost:3000 to view it in your browser.
 
-Please try to create bug reports that are:
+##Features
+Music Player: Users can click on anysong, and a music player will appear. The player includes basic controls such as the previous song, the nextsong, and pause/play buttons. Additional details such as the song’s name, author, volume, repeat, and duration controls are a plus.
+Homepage: Users can choose a genre and get the top songs for that genre
+Explore: Users can select a country and get the top songs for that country
+Music for Specific Country: Show the top songs from the user’s country
+Artists Page: Users can see a list of the most famous artists
+Artist Details Page: Users can see additional information about the artist and their most popular songs.
+Song Details Page: Users can see additional information about the song, such as the song’s music video and lyrics and a list of similar songs.
 
-- _Reproducible._ Include steps to reproduce the problem.
-- _Specific._ Include as much detail as possible: which version, what environment, etc.
-- _Unique._ Do not duplicate existing opened issues.
-- _Scoped to a Single Bug._ One bug per report.
+##APIs
+Shazam Core API to gather music data
+IP Geolocation API to get the user’s location
 
+##Libraries
+Material UI
+Tailwind
+emotion
+Redux Toolkit to keep the API calls organized
 
-## Pull Request
+##License
+This project is licensed under the MIT license.
 
-There are 2 main work flows when dealing with pull requests:
+##Future Enhancements
+Adding ability to search and save songs
+Adding the ability to create and share playlists
+Adding support for other music streaming services
+Improving the user interface and overall user experience
 
-* Pull Request from a [forked repository](https://help.github.com/articles/fork-a-repo)
-* Pull Request from a branch within a repository
-
-Here we are going to focus on 2. Creating a Topical Branch:
-
-
-1. First, we will need to create a branch from the latest commit on master. Make sure your repository is up to date first using
-
-   ```bash
-    git pull origin main
-   ```
-
-   *Note:* `git pull` does a `git fetch` followed by a `git merge` to update the local repo with the remote repo. For a more detailed explanation, see [this stackoverflow post](http://stackoverflow.com/questions/292357/whats-the-difference-between-git-pull-and-git-fetch).
-
-2. To create a branch, use `git checkout -b <new-branch-name> [<base-branch-name>]`, where `base-branch-name` is optional and defaults to `main`. 
-   
-   Use a standard convention for branch names. For example, `<your-name>-dev`. It will be easier to track your pull requests if you use this convention.
-   
-   I'm going to create a new branch called `jsm-dev` from the `main` branch and push it to github.
-
-   ```bash
-    git checkout -b jsm-dev main
-    git push origin jsm-dev
-   ```
-
-3. To create a pull request, you must have changes committed to your new branch.
-
-4. Go to [Pull Requests](https://github.com/JavaScript-Mastery-PRO/project1_team4_repository/pulls) and click on the `New Pull Request` button.
-
-5. Select the `main` branch as the `base` branch and the `jsm-dev` branch as the `compare` branch.
-
-6. Follow the template and fill in the proper information for the pull request.
-
-7. Click on the `Submit` button.
-
-8. You have successfully created a pull request. Now wait for mentor approval. Once approved, you can merge the pull request.
-
-#
+We look forward to continue working on this project and making it even better for our users. We welcome contributions and feedback from the community. Thank you for using Songster!
