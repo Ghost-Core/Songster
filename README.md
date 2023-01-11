@@ -1,7 +1,7 @@
 # Songster
 Develop an elegant React.js Music Application.
 
-Check out the complete project here: https://songster.aminahmadi.me/
+Check out the complete project [here](https://songster.aminahmadi.me/)
 
 ## System Requirements
 To get started with development, you need to install few tools
