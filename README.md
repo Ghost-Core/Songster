@@ -1,4 +1,4 @@
-#Songster
+# Songster
 Develop an elegant React.js Music Application.
 
 Check out the complete project here: https://songster.aminahmadi.me/
