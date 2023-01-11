@@ -81,14 +81,14 @@ Artist Details Page: Users can see additional information about the artist and t
 Song Details Page: Users can see additional information about the song, such as the song’s music video and lyrics and a list of similar songs.
 
 ## APIs
-Shazam Core API to gather music data
-IP Geolocation API to get the user’s location
+- Shazam Core API to gather music data
+- IP Geolocation API to get the user’s location
 
 ## Libraries
-Material UI
-Tailwind
-emotion
-Redux Toolkit to keep the API calls organized
+- Material UI
+- Tailwind
+- emotion
+- Redux Toolkit to keep the API calls organized
 
 ## License
 This project is licensed under the MIT license.
